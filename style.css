@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 .background-img {
@@ -12,6 +12,11 @@ body {
     background-position: center center;
     height: 100vh;
     width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    max-width: 45%;
 }
 
 .logo {
@@ -20,8 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 30px;
-    margin-top: 10rem;  
+    padding: 30px; 
 }
 
 h1 {
@@ -34,11 +38,119 @@ h1 {
     height: 10em;
 }
 
-.img-credit, a {
+.img-credit a, .img-credit {
     color: #ffffff;
 }
 
 .img-credit {
     text-align: center;
-    margin-top: 25rem;   
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+fieldset {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 0px solid #ccc;
+    margin: 10vh 0vh 2vh 0vh;
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+}
+
+input {
+    width: 20vw;
+    height: 3vh;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 1px solid #E5E7EB;
+    outline: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+input:invalid:not(:placeholder-shown) {
+    border: 0.5px solid #ff0000;
+    outline: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+input:valid {
+    border: 0.5px solid #00ff1e;
+    outline: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sign-up-form-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1vw 5vw 0vw 5vw;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#submit {
+    background-color: #70483e;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    margin: 1vh 5vw;
+    width: 13vw;
+    height: 4vh;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.login-link {
+    padding: 0.5vh;
+    margin: 0.7vw 4vw 10vw 4vw;
+    width: 13vw;
+    height: 4vh;
+    font-size: 1rem;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.login-link a {
+    text-decoration: none;
+    color: #70483e;
+    font-weight: 500;
 }
