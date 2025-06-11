@@ -37,31 +37,31 @@
                 <legend>Let's do this!</legend>
                 <div class="form-row">
                     <label for="first-name">FIRST NAME
-                        <input type="text" id="first-name" name="first-name" placeholder="" required />
+                        <input type="text" id="first-name" name="first-name" pattern="[A-Za-z]{2,}" title="First name must contain only letters and be at least 2 characters long" placeholder="" required />
                     </label>
 
                     <label for="last-name">LAST NAME
-                        <input type="text" id="last-name" name="last-name" placeholder="" required />
+                        <input type="text" id="last-name" name="last-name" pattern="[A-Za-z]{2,}" title="Last name must contain only letters and be at least 2 characters long" placeholder="" required />
                     </label>
                 </div>
 
                 <div class="form-row">
                     <label for="email">EMAIL
-                        <input type="email" id="email" name="email" placeholder="" required />
+                        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address" placeholder="" required />
                     </label>
 
                     <label for="phone">PHONE NUMBER
-                        <input type="tel" id="phone" name="phone" placeholder="" required />
+                        <input type="tel" id="phone" name="phone" pattern="[\+]?[0-9\s\-\(\)]{10,15}" title="Phone number must be 10-15 digits and may include spaces, dashes, or parentheses" placeholder="" required />
                     </label>
                 </div>
 
                 <div class="form-row">
                     <label for="password">PASSWORD
-                        <input type="password" id="password" name="password" required />
+                        <input type="password" id="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}" title="Password must be at least 8 characters long and contain at least one lowercase letter, one uppercase letter, one number, and one special character" required />
                     </label>
 
                     <label for="confirm-password">CONFIRM PASSWORD
-                        <input type="password" id="confirm-password" name="confirm-password" required />
+                        <input type="password" id="confirm-password" name="confirm-password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}" title="Password must match the above requirements" required />
                     </label>
                 </div>
             </fieldset>
